@@ -11,11 +11,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author edou
  */
+@XmlRootElement
 @Entity
 public class Categorie implements Serializable {
     @OneToMany(mappedBy = "categorie")
