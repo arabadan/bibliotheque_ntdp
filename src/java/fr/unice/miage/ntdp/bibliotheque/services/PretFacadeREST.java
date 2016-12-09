@@ -24,7 +24,7 @@ import javax.ws.rs.Produces;
  * @author B4RL1V3
  */
 @Stateless
-@Path("fr.unice.miage.ntdp.bibliotheque.pret")
+@Path("pret")
 public class PretFacadeREST extends AbstractFacade<Pret> {
     @PersistenceContext(unitName = "BibliothequePU")
     private EntityManager em;

@@ -24,7 +24,7 @@ import javax.ws.rs.Produces;
  * @author B4RL1V3
  */
 @Stateless
-@Path("fr.unice.miage.ntdp.bibliotheque.users")
+@Path("users")
 public class UsersFacadeREST extends AbstractFacade<Users> {
     @PersistenceContext(unitName = "BibliothequePU")
     private EntityManager em;
