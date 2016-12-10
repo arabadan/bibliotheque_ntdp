@@ -23,7 +23,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author B4RL1V3
  */
-@Path("categorie")
+@Path("categorie-bis")
 @Stateless
 public class CategorieRessource extends AbstractFacade<Categorie> {
     public CategorieRessource() {
@@ -37,7 +37,7 @@ public class CategorieRessource extends AbstractFacade<Categorie> {
     }
     
     @GET
-    @Path("/{id}")
+    @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Categorie getOne(@PathParam("id") Long id) {
             return super.find(id);
@@ -57,7 +57,7 @@ public class CategorieRessource extends AbstractFacade<Categorie> {
     }
     
     @DELETE
-    @Path("/{id}")
+    @Path("{id}")
     @Produces(MediaType.TEXT_PLAIN)
     public String delete(@PathParam("id") Long id) {
         try {
